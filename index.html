@@ -9,11 +9,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
   <!-- The scrollable area -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<body 
-data-bs-spy="scroll" 
-data-bs-target=".navbar" 
-data-bs-offset="50">
+<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
   
 <body>
   
@@ -30,6 +29,10 @@ data-bs-offset="50">
       <ul class="navbar-nav">
       
   <div class="btn-group">
+    
+    <ul class="nav navbar-nav">
+    <li><a href="#section1">HOME</a></li>
+      
   <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
     HOME
   </button>
@@ -38,6 +41,12 @@ data-bs-offset="50">
 <li><a class="dropdown-item active" href="#">Active</a></li>
 <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
   </ul>
+</div>
+
+        <!-- Section 1 -->
+<div id="section1">
+  <h1>Section 1</h1>
+  <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
 </div>
         
 <div class="btn-group">
